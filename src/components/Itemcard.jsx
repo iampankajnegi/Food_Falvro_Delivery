@@ -1,9 +1,9 @@
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 import { MdOutlineDelete } from "react-icons/md";
 import { useDispatch } from "react-redux";
-import { removeFromCart } from "../redux/slice/CartSlice";
-import { increamentQty } from "../redux/slice/CartSlice";
-import { decreamentQty } from "../redux/slice/CartSlice";
+import { removeFromCart } from "../redux/slice/Cartslice";
+import { increamentQty } from "../redux/slice/Cartslice";
+import { decreamentQty } from "../redux/slice/Cartslice";
 import toast from "react-hot-toast";
 
 const ItemCard = ({ id, name, price, img, qty}) => {

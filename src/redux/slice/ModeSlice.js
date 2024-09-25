@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const storedTheme = localStorage.getItem("darkMode") === "true" ;
 
-const ModeSlice = createSlice({
+const modeSlice = createSlice({
   name: "theme",
   initialState: {
     darkMode: storedTheme ,
@@ -25,6 +25,6 @@ const ModeSlice = createSlice({
   },
 });
 
-export const  {toggleEvent,setDarkMode} = ModeSlice.actions ;
+export const  {toggleEvent,setDarkMode} = modeSlice.actions ;
 
-export default ModeSlice.reducer
+export default modeSlice.reducer

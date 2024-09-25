@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
   const showCart = JSON.parse(localStorage.getItem("cart"))||[]
  
-const CartSlice = createSlice({
+const cartSlice = createSlice({
   name: "cart",
   initialState: {
     cart: showCart,
@@ -62,7 +62,7 @@ const CartSlice = createSlice({
 });
 
 // Export actions to use in components
-export const { addToCart, removeFromCart , increamentQty , decreamentQty , emptyCart } = CartSlice.actions;
+export const { addToCart, removeFromCart , increamentQty , decreamentQty , emptyCart } = cartSlice.actions;
 
 // Export the reducer to be added to the store
-export default CartSlice.reducer;
+export default cartSlice.reducer;

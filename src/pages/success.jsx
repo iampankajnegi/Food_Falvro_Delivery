@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { PropagateLoader } from "react-spinners";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import {emptyCart} from "../redux/slice/CartSlice"
+import {emptyCart} from "../redux/slice/Cartslice"
 
 
 const Success = () => {

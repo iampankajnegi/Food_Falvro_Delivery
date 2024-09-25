@@ -1,7 +1,7 @@
 import {createSlice} from  "@reduxjs/toolkit"
 
 
-const CategorySlice = createSlice({
+const categorySlice = createSlice({
 
     name:"category",
 
@@ -20,6 +20,6 @@ const CategorySlice = createSlice({
 
 })
 
-export const {setCategoriesItem} = CategorySlice.actions
+export const {setCategoriesItem} = categorySlice.actions
 
-export default CategorySlice.reducer;
+export default categorySlice.reducer;

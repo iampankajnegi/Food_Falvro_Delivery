@@ -1,6 +1,6 @@
 import { FaStar } from "react-icons/fa";
 import { useDispatch } from "react-redux";
-import { addToCart } from "../redux/slice/CartSlice"; // Make sure the import path is correct
+import { addToCart } from "../redux/slice/Cartslice"; // Make sure the import path is correct
 
 const FoodCard = ({ id, name, price, desc, rating, img, handleToast }) => {
   const dispatch = useDispatch();
